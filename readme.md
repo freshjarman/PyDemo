@@ -26,4 +26,4 @@ Including, but not limited to:
 ## git
 
 1. Git is a distributed version control system.
-2. Creating a new branch is quick && simple.
+2. Creating a new branch is quick AND simple.
