@@ -36,6 +36,8 @@ git merge --no-ff my-feature
 ```bash
 # git checkout my-feature (cd to my-feature branch)
 git rebase master
+# 合并多个commit
+git rebase -i HEAD~3  # 合并最近3个commit
 ```
 - `git rebase` 会将 `my-feature` 分支的提交历史修改为线性，而 `git merge` 会保留 `my-feature` 分支的提交历史。
 - `git rebase` 会将 `my-feature` 分支的每个提交对象应用到 `master` 分支上，而 `git merge` 会将 `my-feature` 分支的最新提交对象的快照合并到 `master` 分支上。
