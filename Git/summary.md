@@ -70,7 +70,19 @@ git config --global alias.st status  # 全局别名（简写）
 # config / rm / mv / init / revert / archive
 ```
 
-## 2. 参考资料
+### 2.7 特定技巧
+
+1.  pull特定文件（而非全部）
+```bash
+git fetch            # 获取远程仓库的最新信息，不会自动合并
+git checkout origin/master -- path/to/file   # 从远程仓库的 master 分支检出特定文件
+```
+这里的 `path/to/file` 是文件的相对路径，可以根据你的实际情况进行修改。请注意，这不会自动合并或提交更改。如果你对文件进行了修改，你可能需要手动进行合并和提交。
+
+
+
+
+## 3. 参考资料
 - [1] [廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/896043488029600/897271968352576)
 - [2] [Git笔记-颜老师](https://yanhaijing.com/git/2014/11/01/my-git-note/)
 - [3] [Git官网](http://git-scm.com)
